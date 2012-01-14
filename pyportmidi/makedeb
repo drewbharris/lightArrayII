@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# This script will symlink debian/debian-changelog or debian/ubuntu-changelog to 
+# debian/changelog before building the package.
+
+if [ ! -d debian ]
+then 
+    echo "Usage: $(basename $0) distro"
+    echo "Run from an extracted debian package source"
+    exit 1
+fi
+
+if [ $# -lt 1 ]
+then
+    echo "$(basename $0) will make either a debian or ubuntu package"
+    echo "Usage: $(basename $0) distro"
+    exit 1
+else
+    distro="$1"
+    shift
+    echo "$@"
+fi
+
+if [ -f debian/changelog ]  && [ ! -L debian/changelog ]
+then
+    echo "debian/changelog not a symlink"
+    exit 1
+fi
+    
+if [ ! -f "debian/$distro-changelog" ]
+then
+    echo "debian/$distro-changelog: no such file"
+    exit 1
+fi
+
+pushd debian
+ln -sf $distro-changelog changelog
+popd
+dpkg-buildpackage -r $@

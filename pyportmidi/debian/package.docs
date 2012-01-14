@@ -1,0 +1,4 @@
+debian/copyright
+COPYING
+README.txt
+test_pyportmidi.py

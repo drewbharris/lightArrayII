@@ -1,0 +1,15 @@
+syntax: glob
+
+build-python*
+build/*
+*swp
+debian/python-portmidi*
+debian/compat
+debian/files
+debian/pycompat
+pypm.c
+python-build-stamp-*
+debian/pyPortMidi.substvars
+MANIFEST
+dist/*
+

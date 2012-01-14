@@ -1,0 +1,66 @@
+python-portmidi (0.0.6-debian10) unstable; urgency=low
+
+  * Splitted changelog for debian/hardy
+  * Moved Suggests to Package section (control)
+
+ -- Simon Piette <simonp@sat.qc.ca>  Tue, 23 Mar 2010 17:41:43 -0400
+
+python-portmidi (0.0.6-9) unstable; urgency=low
+
+  * Removed ubuntu mentions, one changelog rules them all
+
+ -- Simon Piette <simonp@sat.qc.ca>  Tue, 16 Mar 2010 11:57:31 -0400
+
+python-portmidi (0.0.6-4ubuntu8) hardy; urgency=low
+
+  * Moved dh_installdocs.
+
+ -- Simon Piette <simonp@sat.qc.ca>  Mon, 15 Mar 2010 14:25:42 -0400
+
+python-portmidi (0.0.6-4ubuntu7) hardy; urgency=low
+  
+  * Switched to dh_pysupport.
+
+ -- Alexandre Quessy <alexandre@quessy.net>  Mon, 15 Mar 2010 12:26:34 -0400
+
+python-portmidi (0.0.6-4ubuntu6) hardy; urgency=low
+  
+  * Fixed ubuntu version number
+
+ -- Alexandre Quessy <alexandre@quessy.net>  Tue, 19 Jan 2010 01:35:31 -0500
+
+python-portmidi (0.0.6-0ubuntu5) hardy; urgency=low
+  
+  * Proper Ubuntu packaging.
+
+ -- Alexandre Quessy <alexandre@quessy.net>  Tue, 19 Jan 2010 01:25:49 -0500
+
+python-portmidi (0.0.6-4) unstable; urgency=low
+  
+  * Updated libportmidi.a and libporttime.a to the ones in Ubuntu 8.04
+
+ -- Alexandre Quessy (SAT) <alexandre@sat.qc.ca>  Mon, 14 Dec 2009 13:48:19 -0500
+
+python-portmidi (0.0.6-3) unstable; urgency=low
+  
+  * Fixed bad error in rules.
+
+ -- Alexandre Quessy (SAT) <alexandre@sat.qc.ca>  Mon, 14 Dec 2009 12:46:45 -0500
+
+python-portmidi (0.0.6-2) unstable; urgency=low
+  
+  * Put test_pyportmidi.py in the package's doc.
+
+ -- Alexandre Quessy (SAT) <alexandre@sat.qc.ca>  Mon, 14 Dec 2009 12:43:45 -0500
+
+python-portmidi (0.0.6) unstable; urgency=low
+  
+  * Got rid of executables that should not be executables.
+
+ -- Alexandre Quessy (SAT) <alexandre@sat.qc.ca>  Mon, 14 Dec 2009 11:46:39 -0500
+
+python-portmidi (0.0.5) unstable; urgency=low
+  
+  * Initial packaging. 
+
+ -- Alexandre Quessy (SAT) <alexandre@sat.qc.ca>  Mon, 14 Dec 2009 11:06:08 -0500
