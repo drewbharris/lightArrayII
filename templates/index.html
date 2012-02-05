@@ -1,0 +1,19 @@
+$def with (page)
+
+$if page == "on":
+	Lights on.<br>
+$elif page == "off":
+	Lights off.<br>
+$elif page == "fadeon":
+	Fading lights on.<br>
+$elif page == "fadeoff":
+	Fading lights off.<br>
+$elif page == "error":
+	Could not select Firebox.
+$else:
+	Idle.<br>
+<a href="/on">on</a><br>
+<a href="/off">off</a><br>
+<a href="/fadeon">fade on</a><br>
+<a href="/fadeoff">fade off</a><br>
+<a href="/">idle</a><br>
